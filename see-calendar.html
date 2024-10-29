@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendrier et TodoList</title>
+    <link rel="stylesheet" href="calendar.css" />
+  </head>
+  <body>
+    <!-- Bouton pour retourner à l'index.html -->
+    <div style="text-align: center; margin-bottom: 20px;">
+      <button id="back-to-home" onclick="location.href='index.html'">
+        Retour à l'Accueil
+      </button>
+    </div>
+
+    <div class="container">
+      <!-- Calendrier -->
+      <div id="calendar">
+        <h2>Calendrier</h2>
+        <div id="month-selector">
+          <button id="prev-month">« Mois précédent</button>
+          <span id="current-month"></span>
+          <button id="next-month">Mois suivant »</button>
+        </div>
+        <div id="calendar-grid"></div>
+      </div>
+
+      <!-- TodoList pour la date sélectionnée -->
+      <div id="todo-container">
+        <h2>TodoList pour le <span id="selected-date"></span></h2>
+        <input type="text" id="task-input" placeholder="Nouvelle tâche" />
+        <button id="add-task-btn">Ajouter tâche</button>
+        <ul id="tasks"></ul>
+      </div>
+
+      <!-- Vue globale des tâches -->
+      <div id="global-tasks">
+        <h2>Vue globale des tâches</h2>
+        <ul id="global-tasks-list"></ul>
+      </div>
+    </div>
+
+    <script src="calendar.js"></script>
+  </body>
+</html>

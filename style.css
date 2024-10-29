@@ -1,0 +1,73 @@
+:root{
+    --colorH1: red;
+    --hoverText: orange;
+    --fontBlod: bolder;
+    --alignCenter: center;
+    --bigger: 30px;
+    --texter: 25px;
+    --borderRond: solid, 0px;
+}
+
+h1.title{
+    text-align: var(--alignCenter);
+    font-weight: var(--fontBlod);
+    color: var(--colorH1);
+    font-size: var(--bigger);
+    text-transform: uppercase;
+}
+.title:hover{
+    text-decoration: underline;
+    color: var(--hoverText);
+}
+p.txt{
+    color: black;
+    font-weight: 700;
+    font-size: var(--texter);
+}
+body{
+    background-image: linear-gradient(to right, red,orange);
+}
+header.head{
+    background-color: black;
+    text-align: center;
+    border: var(--borderRond);
+    border-radius: var(--texter);
+    padding: 5px;
+}
+div.point{
+    text-align: left;
+    position: absolute
+}
+img.poinpoin{
+    width: 50px;
+}
+img.home{
+    width: 50px;
+}
+div.home{
+    text-align: center;
+
+}
+ul.nav {
+    list-style-type: none;
+}
+nav.navb{
+    text-align: center;
+    background-color: #ddd;
+    border: solid ;
+    border-radius: 5px;
+}
+button.seeCalendar{
+    background-color: blueviolet;
+    padding: 20px;
+    border: var(--borderRond);
+    border-radius: var(--texter);
+}
+.seeCalendar:hover{
+    transform: scale(1.1);
+    background-color: greenyellow;
+    text-align: center;
+    
+
+}
+
